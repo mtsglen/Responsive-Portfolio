@@ -1,0 +1,341 @@
+/* * {
+  outline: 1px solid red !important;
+}*/
+
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: WhiteSmoke;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+header {
+  /* margin-top: 20px; */
+  /* background-color: white; */
+  border-bottom: 5px solid CadetBlue;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: LightSlateGrey;
+  color: GhostWhite;
+  height: 50px;
+  position: relative;
+}
+
+.name {
+  /* background-color: LightSlateGrey; */
+  color: GhostWhite;
+  background-color: CadetBlue;
+  padding: 13px;
+  font-family: Apple Chancery, cursive;
+  float: left;
+  font-size: 24px;
+  position: absolute;
+  /* top: 25%; */
+  /* left: 20px; */
+  padding-left: 5px;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+}
+
+nav li {
+  color: GhostWhite;
+  float: left;
+  padding: 20px;
+}
+
+a:link, a:visited {
+  color: GhostWhite;
+  text-decoration: none;
+}
+
+/* .mid  {
+  position: relative;
+} */
+
+.about-me, .contact-form, .portfolio {
+  /* width: 60%; */
+  width: 650px;
+  /* margin-right: 20px; */
+  height: auto;
+  float: left;
+  /* margin-left: 5%; */
+  margin-top: 3%;
+  /* padding: 10px 10px; */
+  border: 3px CadetBlue solid;
+  background-color: white;
+  clear: both;
+  margin-bottom: 3%;
+}
+
+.about-me h1, .contact-form h1, .portfolio h1 {
+  float: left;
+  /* font-family: 'Oswald', sans-serif; */
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+  border-bottom: 3px solid CadetBlue;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.picture {
+  width: 190px;
+  float: left;
+  margin: 20px;
+}
+
+.text {
+  line-height: 1.5;
+  /* float: left; */
+  margin: 20px;
+  /* border-top: 3px solid CadetBlue; */
+}
+
+.connect {
+  /* width: 25%; */
+  width: 270px;
+  /* margin-left: 40px; */
+  height: auto;
+  float: right;
+  /* clear: both; */
+  /* margin-right: 9%; */
+  margin-top: 3%;
+  /* padding: 10px 10px; */
+  border: 3px CadetBlue solid;
+  background-color: white;
+}
+
+.connect h2  {
+  font-size: 24px;
+  height: 29px;
+  padding-left: 10px;
+  text-align: center;
+  border-bottom: 3px solid CadetBlue;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.connect a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 auto;
+}
+
+.form {
+  span: 100%;
+  /* padding: 5px; */
+}
+
+form p {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.snake, .trivia {
+  float: left;
+  width: 40%;
+  margin: 10px 5%;
+  text-align: center;
+  font-size: 16px;
+}
+
+ .hangman, .rps {
+  float: right;
+  width: 40%;
+  margin: 10px 5%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.portfolio img {
+  padding-top: 20px;
+}
+
+.portfolio p {
+  background-color:rgba(109,156,159, 0.7);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 50px;
+}
+
+#name, #email, #message {
+  margin-left: 10px;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+#message {
+  height: 200px;
+}
+
+button:active {
+  transform: translateY(4px);
+  text-decoration: none;
+}
+
+button {
+  background-color: CadetBlue;
+  color: GhostWhite;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  background-color: LightSlateGrey;
+  padding:20px 0;
+  /* padding-bottom: 20px; */
+  border-top: 5px solid CadetBlue;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  padding-right: 5%;
+  text-align: right;
+  color: GhostWhite;
+  font-family : Verdana, Geneva, sans-serif;
+}
+
+/* Media Queries below this line */
+
+@media screen
+  and (max-width:640px)
+  and (min-width:1px){
+
+    body {
+      min-height: 100%;
+    }
+
+    .wrapper {
+      /* width: 10%; */
+      min-height: 100vh;
+      position: relative;
+    }
+
+    header {
+      position: static;
+      /* background-color: blue; */
+    }
+
+    .about-me, .contact-form, .portfolio {
+      width: 95%;
+      margin: 1% auto;
+      text-align: justify;
+    }
+
+    .about-me img {
+      float: none;
+      display: inline;
+      margin: auto;
+    }
+
+    .connect {
+      text-align: center;
+      width: 20%;
+      margin: 0 40%;
+      margin-bottom: 10px;
+    }
+
+    .connect a {
+      display: inline;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 auto;
+    }
+    footer {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      bottom: 0;
+    }
+}
+
+@media screen
+  and (max-width : 768px)
+  and (min-width : 641px){
+  body, .wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  /* header {
+    background-color: red;
+  } */
+
+  .about-me, .contact-form, .portfolio {
+    width: 80%;
+    margin: 2% 10%;
+  }
+
+  .connect {
+    clear: both;
+    text-align: center;
+    width: 20%;
+    margin: 0 40%;
+  }
+
+  .connect a {
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen
+  and (max-width:980px)
+  and (min-width:769px){
+    body, .wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    header {
+      width: 100%;
+      margin: 0 auto;
+      /* background-color: green; */
+    }
+
+    .about-me, .contact-form, .portfolio{
+      width: 60%;
+      margin-left: 3%;
+    }
+
+    .connect {
+      width: 30%;
+      margin-right: 3%;
+      float: right;
+    }
+
+    footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+
+    footer p {
+      text-align: center;
+    }
+}
