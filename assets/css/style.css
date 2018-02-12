@@ -214,100 +214,11 @@ footer p {
 
 /* Media Queries below this line */
 
-@media screen
-  and (max-width:640px)
-  and (min-width:1px){
-
-    body {
-      min-height: 100%;
-    }
-
-    .wrapper {
-      /* width: 10%; */
-      min-height: 100vh;
-      position: relative;
-    }
-
-    header {
-      position: static;
-      /* background-color: blue; */
-    }
-
-    .about-me, .contact-form, .portfolio {
-      width: 95%;
-      margin: 1% auto;
-      text-align: justify;
-    }
-
-    .about-me img {
-      float: none;
-      display: inline;
-      margin: auto;
-    }
-
-    .connect {
-      text-align: center;
-      width: 20%;
-      margin: 0 40%;
-      margin-bottom: 10px;
-    }
-
-    .connect a {
-      display: inline;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0 auto;
-    }
-    footer {
-      width: 100%;
-      margin: 0;
-      position: relative;
-      bottom: 0;
-    }
-}
-
-@media screen
-  and (max-width : 768px)
-  and (min-width : 641px){
-  body, .wrapper {
-    width: 100%;
-    position: relative;
-  }
-
-  /* header {
-    background-color: red;
-  } */
-
-  .about-me, .contact-form, .portfolio {
-    width: 80%;
-    margin: 2% 10%;
-  }
-
-  .connect {
-    clear: both;
-    text-align: center;
-    width: 20%;
-    margin: 0 40%;
-  }
-
-  .connect a {
-    display: inline;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 auto;
-  }
-
-  footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-@media screen
-  and (max-width:980px)
-  and (min-width:769px){
+@media only screen
+  and (max-width:980px){
+  /* and (min-width:769px){ */
     body, .wrapper {
+      height: 100vh;
       width: 100%;
       position: relative;
     }
@@ -315,7 +226,7 @@ footer p {
     header {
       width: 100%;
       margin: 0 auto;
-      /* background-color: green; */
+      background-color: green;
     }
 
     .about-me, .contact-form, .portfolio{
@@ -331,11 +242,118 @@ footer p {
 
     footer {
       width: 100%;
-      position: absolute;
+      position: relative;
       bottom: 0;
     }
 
     footer p {
       text-align: center;
+    }
+}
+
+@media only screen
+  and (max-width : 768px){
+  /* and (min-width : 641px){ */
+  body, .wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  header {
+    background-color: red;
+  }
+
+  .about-me, .contact-form, .portfolio {
+    width: 80%;
+    margin: 2% 10%;
+  }
+
+  /* .connect {
+    clear: both;
+    text-align: center;
+    width: 20%;
+    margin: 0 40%;
+  } */
+
+  .connect {
+    width: 80%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    align: center;
+    text-align: center;
+    clear: both;
+  }
+
+  .connect a {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media only screen
+  and (max-width:640px){
+  /* and (min-width:1px){ */
+
+    body {
+      min-height: 100%;
+    }
+
+    .wrapper {
+      /* width: 10%; */
+      min-height: 100vh;
+      position: relative;
+    }
+
+    header {
+      position: static;
+      background-color: blue;
+    }
+
+    .about-me, .contact-form, .portfolio {
+      width: 95%;
+      margin: 1% auto;
+      text-align: justify;
+    }
+
+    .about-me img {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      align: center;
+    }
+
+    .connect {
+      width: 80%;
+      float: none;
+      display: block;
+      margin: 0 auto;
+      align: center;
+      clear: both;
+      text-align: center;
+    }
+
+    .connect a {
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+      /* padding: 0 auto; */
+      /* clear: both; */
+    }
+
+    footer {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      bottom: 0;
     }
 }
